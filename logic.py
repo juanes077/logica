@@ -1,4 +1,4 @@
-# logica.py
+
 from dataclasses import dataclass, field, asdict
 from abc import ABC, abstractmethod
 from typing import List, Tuple, Optional, Dict, Any
@@ -8,30 +8,20 @@ import os
 from datetime import datetime
 
 
-# -------------------------
-# Excepciones personalizadas
-# -------------------------
 class ConcesionarioError(Exception):
-    """Error base para el concesionario."""
+
 
 
 class SeleccionInvalidaError(ConcesionarioError):
-    """Se lanzó cuando el usuario selecciona un índice inválido."""
 
 
 class DiaNoDisponibleError(ConcesionarioError):
-    """Se lanzó cuando se intenta reservar en un día no disponible."""
 
 
 class PersistenciaError(ConcesionarioError):
-    """Error al cargar/guardar JSON."""
 
 
-# -------------------------
-# Abstracción: clase base
-# -------------------------
 class Vehiculo(ABC):
-    """Clase abstracta que representa un vehículo genérico."""
 
     @abstractmethod
     def mostrar_informacion(self) -> None:
@@ -43,13 +33,9 @@ class Vehiculo(ABC):
 
     @abstractmethod
     def performance_score(self) -> float:
-        """Score polimórfico que permite comparar vehículos según su tipo."""
         raise NotImplementedError
 
 
-# -------------------------
-# Dataclasses concretas
-# -------------------------
 @dataclass
 class Moto(Vehiculo):
     id: int
@@ -100,9 +86,6 @@ class Cliente:
         print(f"Correo: {self.correo}")
 
 
-# -------------------------
-# Repositorio para persistencia
-# -------------------------
 class CatalogoRepository:
     def __init__(self, path: str = "base_datos.json"):
         self.path = path
@@ -119,7 +102,7 @@ class CatalogoRepository:
             self._catalogo = []
             for i, entry in enumerate(raw, start=1):
                 if "id" not in entry:
-                    entry["id"] = i  # asigna id incremental si no existe
+                    entry["id"] = i
                 self._catalogo.append(Moto(**entry))
         except Exception as e:
             raise PersistenciaError(f"Error leyendo JSON: {e}")
@@ -135,9 +118,6 @@ class CatalogoRepository:
         return list(self._catalogo)
 
     def get_by_id(self, moto_id: int) -> Moto:
-        """
-        Devuelve una instancia Moto con el id dado o lanza SeleccionInvalidaError si no existe.
-        """
         for m in self._catalogo:
             if m.id == moto_id:
                 return m
@@ -157,9 +137,6 @@ class CatalogoRepository:
         self.save()
 
 
-# -------------------------
-# Prueba de manejo
-# -------------------------
 class PruebaManejo:
     def __init__(self):
         self.disponibilidad = {d: True for d in ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]}
@@ -176,9 +153,6 @@ class PruebaManejo:
         print(f"\nPrueba de manejo reservada para {cliente.nombre} el {dia} con la moto {moto.nombre}.")
 
 
-# -------------------------
-# Compra (actualizada)
-# -------------------------
 class Compra:
     def __init__(self):
         self.compras: List[Tuple[Cliente, Moto, str]] = []
@@ -228,9 +202,6 @@ class Compra:
             json.dump(recibo, f, ensure_ascii=False, indent=2)
 
 
-# -------------------------
-# Concesionario
-# -------------------------
 class Concesionario:
     def __init__(self, json_path: str = "base_datos.json"):
         self.repo = CatalogoRepository(json_path)
