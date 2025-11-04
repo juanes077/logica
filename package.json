@@ -1,0 +1,182 @@
+[
+    {
+        "nombre": "Boxer CT 100",
+        "marca": "Bajaj",
+        "precio": 4950000,
+        "motor": "97.2 cc",
+        "potencia": "8.1 HP",
+        "peso": 109,
+        "tipo": "Trabajo"
+    },
+    {
+        "nombre": "AKT NKD 125",
+        "marca": "AKT",
+        "precio": 5390000,
+        "motor": "124 cc",
+        "potencia": "11.2 HP",
+        "peso": 120,
+        "tipo": "Urbana"
+    },
+    {
+        "nombre": "Yamaha FZ25",
+        "marca": "Yamaha",
+        "precio": 14300000,
+        "motor": "249 cc",
+        "potencia": "20.8 HP",
+        "peso": 153,
+        "tipo": "Naked"
+    },
+    {
+        "nombre": "Suzuki Gixxer 150",
+        "marca": "Suzuki",
+        "precio": 12690000,
+        "motor": "155 cc",
+        "potencia": "13.9 HP",
+        "peso": 141,
+        "tipo": "Deportiva"
+    },
+    {
+        "nombre": "Honda CB 125F",
+        "marca": "Honda",
+        "precio": 8680000,
+        "motor": "124 cc",
+        "potencia": "10.4 HP",
+        "peso": 117,
+        "tipo": "Trabajo"
+    },
+    {
+        "nombre": "TVS Apache RTR 160",
+        "marca": "TVS",
+        "precio": 10590000,
+        "motor": "159.7 cc",
+        "potencia": "15.2 HP",
+        "peso": 139,
+        "tipo": "Deportiva"
+    },
+    {
+        "nombre": "Victory MRX 150",
+        "marca": "Victory",
+        "precio": 8790000,
+        "motor": "149 cc",
+        "potencia": "11.6 HP",
+        "peso": 130,
+        "tipo": "Doble propósito"
+    },
+    {
+        "nombre": "Kawasaki Z400",
+        "marca": "Kawasaki",
+        "precio": 33900000,
+        "motor": "399 cc",
+        "potencia": "47 HP",
+        "peso": 168,
+        "tipo": "Naked"
+    },
+    {
+        "nombre": "Benelli TNT 180S",
+        "marca": "Benelli",
+        "precio": 13990000,
+        "motor": "175 cc",
+        "potencia": "18 HP",
+        "peso": 145,
+        "tipo": "Naked"
+    },
+    {
+        "nombre": "Yamaha XTZ 150",
+        "marca": "Yamaha",
+        "precio": 13190000,
+        "motor": "149 cc",
+        "potencia": "12.3 HP",
+        "peso": 131,
+        "tipo": "Doble propósito"
+    },
+    {
+        "nombre": "KTM 390 Duke",
+        "marca": "KTM",
+        "precio": 29800000,
+        "motor": "398.7 cc",
+        "potencia": "45 PS",
+        "peso": 165,
+        "tipo": "Naked"
+    },
+    {
+        "nombre": "Honda CB500F",
+        "marca": "Honda",
+        "precio": 30000000,
+        "motor": "471 cc",
+        "potencia": "50 HP",
+        "peso": 188,
+        "tipo": "Naked"
+    },
+    {
+        "nombre": "Yamaha MT-07",
+        "marca": "Yamaha",
+        "precio": 57000000,
+        "motor": "689 cc",
+        "potencia": "72.4 HP",
+        "peso": 183,
+        "tipo": "Naked"
+    },
+    {
+        "nombre": "Kawasaki Ninja 400",
+        "marca": "Kawasaki",
+        "precio": 37000000,
+        "motor": "399 cc",
+        "potencia": "48.9 HP",
+        "peso": 164,
+        "tipo": "Deportiva"
+    },
+    {
+        "nombre": "Yamaha YZF-R3",
+        "marca": "Yamaha",
+        "precio": 32000000,
+        "motor": "321 cc",
+        "potencia": "42 HP",
+        "peso": 169,
+        "tipo": "Deportiva"
+    },
+    {
+        "nombre": "Honda CB300R",
+        "marca": "Honda",
+        "precio": 17800000,
+        "motor": "286 cc",
+        "potencia": "30.7 HP",
+        "peso": 143,
+        "tipo": "Urbana"
+    },
+    {
+        "nombre": "Royal Enfield Meteor 350",
+        "marca": "Royal Enfield",
+        "precio": 17790000,
+        "motor": "349 cc",
+        "potencia": "20.2 BHP",
+        "peso": 191,
+        "tipo": "Crucero"
+    },
+    {
+        "nombre": "BMW G 310 R",
+        "marca": "BMW",
+        "precio": 30990000,
+        "motor": "313 cc",
+        "potencia": "34 HP",
+        "peso": 159,
+        "tipo": "Naked"
+    },
+    {
+        "nombre": "KTM 250 Duke",
+        "marca": "KTM",
+        "precio": 23990000,
+        "motor": "249.07 cc",
+        "potencia": "31 PS",
+        "peso": 165,
+        "tipo": "Naked"
+    },
+    {
+        "nombre": "Suzuki GSX-250R",
+        "marca": "Suzuki",
+        "precio": 15180000,
+        "motor": "248 cc",
+        "potencia": "24.7 HP",
+        "peso": 181,
+        "tipo": "Deportiva"
+    }
+]
