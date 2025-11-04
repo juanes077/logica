@@ -11,7 +11,6 @@ from datetime import datetime
 class ConcesionarioError(Exception):
 
 
-
 class SeleccionInvalidaError(ConcesionarioError):
 
 
